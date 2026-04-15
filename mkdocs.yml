@@ -31,14 +31,15 @@ nav:
 
   - AI:
       - Overview: ai/index.md
-      - Transformer: ai/transformer.md
+      - 从生物学上看SNN的合理性: ai/transformer_attention.md
 
   - Computer Scince:
       - Overview: cs/index.md
+  
+  - 论文:
+    - Overview: essay/index.md
       
   - 工具使用方法:
       - Overview: tool/index.md
 
-  - 论文:
-      - Overview: essay/index.md
-      - 从生物学上看SNN的合理性: essay/类脑计算/bio_plausible_SNN.md
+
