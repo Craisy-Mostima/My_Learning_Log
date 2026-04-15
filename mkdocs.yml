@@ -9,18 +9,13 @@ theme:
     - navigation.expand
     - navigation.top
     - content.code.copy
-    - toc.integrate
-    - navigation.sections
-    - navigation.expand
-
-markdown_extensions:
-  - toc:
-      permalink: true
 
 plugins:
   - search
 
 markdown_extensions:
+  - toc:
+      permalink: true
   - admonition
   - pymdownx.details
   - pymdownx.superfences
