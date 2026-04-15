@@ -4,16 +4,18 @@ site_url: https://note_craisy.com
 theme:
   name: material
   features:
-    - toc.integrate        # 把目录整合到右侧
-    - navigation.sections  # 左侧更清晰（推荐）
-    - navigation.expand    # 自动展开（可选）
-
-  features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
     - content.code.copy
+    - toc.integrate
+    - navigation.sections
+    - navigation.expand
+
+markdown_extensions:
+  - toc:
+      permalink: true
 
 plugins:
   - search
