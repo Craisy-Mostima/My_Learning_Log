@@ -2,10 +2,10 @@
 
 ## 一、目标位置
 放入目录：
-docs/ai/
+docs/essay/
 
 文件名：
-transformer_attention.md
+SNNoverall.md
 
 ---
 

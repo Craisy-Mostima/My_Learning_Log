@@ -37,7 +37,7 @@ nav:
   
   - 论文:
     - Overview: essay/index.md
-    - 从生物学上看SNN的合理性: essay/transformer_attention.md
+    - SNNoverall: essay/SNNoverall.md
       
   - 工具使用方法:
       - Overview: tool/index.md
