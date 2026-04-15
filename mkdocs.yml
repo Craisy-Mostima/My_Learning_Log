@@ -1,0 +1,44 @@
+site_name: Craisy Notebook
+site_url: https://note_craisy.com
+
+theme:
+  name: material
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+
+  - AI:
+      - Overview: ai/index.md
+      - Transformer: ai/transformer.md
+
+  - Computer Scince:
+      - Overview: cs/index.md
+      
+  - 工具使用方法:
+      - Overview: tool/index.md
+
+  - 论文:
+      - Overview: essay/index.md
+      - 从生物学上看SNN的合理性: essay/类脑计算/bio_plausible_SNN.md
