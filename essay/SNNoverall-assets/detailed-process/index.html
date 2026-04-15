@@ -282,9 +282,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Craisy Notebook" class="md-nav__button md-logo" aria-label="Craisy Notebook" data-md-component="logo">
       
@@ -715,6 +713,257 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 模型定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.1 模型定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1.1 输入编码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1.2 网络结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2213" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1.3 神经元动力学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2214" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1.4 输入+输出
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-winner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 一次前向计算（决定winner）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.3 学习规则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.3 学习规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）更新对象：delay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2hebbian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）Hebbian + 时间对齐思想
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3som" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）邻域更新（SOM核心）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4first-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）只用first spike
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.4 完整的训练流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.4 完整的训练流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初始化：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step1：编码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step2：前向传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step3winner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step3：选择winner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step4delaywinner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step4：更新delay（winner+邻域）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step5：退火
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step6：停止条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -727,8 +976,8 @@
 
   <h1>Detailed process</h1>
 
-<h3 id="221">2.2.1 模型定义</h3>
-<h4 id="2211">2.2.1.1 输入编码</h4>
+<h3 id="221">2.2.1 模型定义<a class="headerlink" href="#221" title="Permanent link">&para;</a></h3>
+<h4 id="2211">2.2.1.1 输入编码<a class="headerlink" href="#2211" title="Permanent link">&para;</a></h4>
 <p>给定输入向量<span class="arithmatex">\(x∈R^D\)</span>,编码为一次脉冲的时间：</p>
 <p><span class="arithmatex">\(t_i​=\text{encode}(x_i​)\)</span></p>
 <ul>
@@ -745,7 +994,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="2212">2.2.1.2 网络结构</h4>
+<h4 id="2212">2.2.1.2 网络结构<a class="headerlink" href="#2212" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>输入层：<span class="arithmatex">\(D\)</span> 个神经元（各发一次）</p>
@@ -790,18 +1039,18 @@
 <p>连接：每个输入 <span class="arithmatex">\(i\)</span> 到每个输出 <span class="arithmatex">\(j\)</span> 有一条突触，<strong>权重固定</strong> <span class="arithmatex">\(w_{ij}\)</span>​，<strong>delay 可学习</strong> <span class="arithmatex">\(d_{ij}\)</span>​</p>
 </li>
 </ul>
-<h4 id="2213">2.2.1.3 神经元动力学</h4>
+<h4 id="2213">2.2.1.3 神经元动力学<a class="headerlink" href="#2213" title="Permanent link">&para;</a></h4>
 <p>输入神经元 <span class="arithmatex">\(j\)</span> 的膜电位：</p>
 <p><span class="arithmatex">\(u_j​(t)=∑_{i=1}^D​w_{ij}​ε(t−(t_i​+d_{ij}​))\)</span></p>
 <ul>
 <li><span class="arithmatex">\(ε(⋅)\)</span>：PSP 核（如 alpha kernel）</li>
 </ul>
 <p>当 <span class="arithmatex">\(u_j​(t)≥θ\)</span> 时，神经元在时刻 <span class="arithmatex">\(t_j^{fire}\)</span>​ 发放（<strong>只看第一次发放</strong>）</p>
-<h4 id="2214">2.2.1.4 输入+输出</h4>
+<h4 id="2214">2.2.1.4 输入+输出<a class="headerlink" href="#2214" title="Permanent link">&para;</a></h4>
 <p>输入：一组spike的时间</p>
 <p>输出：一个spike（最早的那个）</p>
 <p>实际使用：这个spike属于哪个神经元</p>
-<h3 id="222-winner">2.2.2 一次前向计算（决定winner）</h3>
+<h3 id="222-winner">2.2.2 一次前向计算（决定winner）<a class="headerlink" href="#222-winner" title="Permanent link">&para;</a></h3>
 <p>我们的目标是找到最先发放的神经元（winner）</p>
 <p>步骤：</p>
 <ol>
@@ -819,10 +1068,10 @@
 </li>
 </ol>
 <p>最早方法 = 最匹配（时间最对齐）</p>
-<h3 id="223">2.2.3 学习规则</h3>
-<h4 id="1delay">（1）更新对象：delay</h4>
+<h3 id="223">2.2.3 学习规则<a class="headerlink" href="#223" title="Permanent link">&para;</a></h3>
+<h4 id="1delay">（1）更新对象：delay<a class="headerlink" href="#1delay" title="Permanent link">&para;</a></h4>
 <p><span class="arithmatex">\(d_{ij} \leftarrow d_{ij} + Δd_{ij}\)</span></p>
-<h4 id="2hebbian">（2）Hebbian + 时间对齐思想</h4>
+<h4 id="2hebbian">（2）Hebbian + 时间对齐思想<a class="headerlink" href="#2hebbian" title="Permanent link">&para;</a></h4>
 <p>目标：让到达时间对齐：</p>
 <p><span class="arithmatex">\(t_i+d_{ij}\approx t_{j^*}^{fine}\)</span></p>
 <p>因此一个自然的更新是：</p>
@@ -835,7 +1084,7 @@
 <p>如果太晚 → 减小 delay（提前）</p>
 </li>
 </ul>
-<h4 id="3som">（3）邻域更新（SOM核心）</h4>
+<h4 id="3som">（3）邻域更新（SOM核心）<a class="headerlink" href="#3som" title="Permanent link">&para;</a></h4>
 <p>我们不仅更新winnier，也更新邻居：</p>
 <p><span class="arithmatex">\(Δd_{ij}​=η⋅h_{j^*,j}​⋅(t_{j^*}^{fire}​−(t_i​+d_{ij}​))\)</span></p>
 <p>其中：</p>
@@ -848,12 +1097,12 @@
 <p><span class="arithmatex">\(σ\)</span>：邻域半径（逐渐减小）</p>
 </li>
 </ul>
-<h4 id="4first-spike">（4）只用first spike</h4>
+<h4 id="4first-spike">（4）只用first spike<a class="headerlink" href="#4first-spike" title="Permanent link">&para;</a></h4>
 <p>所有计算只基于：</p>
 <p><span class="arithmatex">\(t_j^{fire}\)</span></p>
 <p>忽略后续的spike</p>
-<h3 id="224">2.2.4 完整的训练流程</h3>
-<h4 id="_1">初始化：</h4>
+<h3 id="224">2.2.4 完整的训练流程<a class="headerlink" href="#224" title="Permanent link">&para;</a></h3>
+<h4 id="_1">初始化：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p><span class="arithmatex">\(d_{ij}​∼U(0,d_{max}​)\)</span></p>
@@ -868,17 +1117,17 @@
 <p>学习率 <span class="arithmatex">\(η\)</span>、邻域 <span class="arithmatex">\(σ\)</span></p>
 </li>
 </ul>
-<h4 id="step1">step1：编码</h4>
+<h4 id="step1">step1：编码<a class="headerlink" href="#step1" title="Permanent link">&para;</a></h4>
 <p><span class="arithmatex">\(x\rightarrow \{t_i\}\)</span></p>
-<h4 id="step2">step2：前向传播</h4>
+<h4 id="step2">step2：前向传播<a class="headerlink" href="#step2" title="Permanent link">&para;</a></h4>
 <p>计算每个<span class="arithmatex">\(u_j(t)\)</span>，得到发放时刻<span class="arithmatex">\(t_j^{fire}\)</span></p>
-<h4 id="step3winner">step3：选择winner</h4>
+<h4 id="step3winner">step3：选择winner<a class="headerlink" href="#step3winner" title="Permanent link">&para;</a></h4>
 <p>$ j^*=\text{arg }\text{min​}_j\text{ }t_j^{fire}​$</p>
-<h4 id="step4delaywinner">step4：更新delay（winner+邻域）</h4>
+<h4 id="step4delaywinner">step4：更新delay（winner+邻域）<a class="headerlink" href="#step4delaywinner" title="Permanent link">&para;</a></h4>
 <p><span class="arithmatex">\(Δd_{ij}​=η⋅h_{j^*,j}​⋅(t_{j^*}^{fire}​−(t_i​+d_{ij}​))\)</span></p>
 <p>其中：</p>
 <p><span class="arithmatex">\(h_{j^*,j}=\text{exp}(-\frac{||r_j-r_{j^*}||^2}{2\sigma^2})\)</span></p>
-<h4 id="step5">step5：退火</h4>
+<h4 id="step5">step5：退火<a class="headerlink" href="#step5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p><span class="arithmatex">\(η↓\)</span></p>
@@ -890,7 +1139,7 @@
 <p><span class="arithmatex">\(θ↑\)</span></p>
 </li>
 </ul>
-<h4 id="step6">step6：停止条件</h4>
+<h4 id="step6">step6：停止条件<a class="headerlink" href="#step6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>delay变化很小</p>
@@ -954,7 +1203,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "content.code.copy", "toc.integrate", "navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
