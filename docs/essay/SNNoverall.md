@@ -1,3 +1,7 @@
+---
+title: SNNoverall
+---
+
 本片论文的原文地址：[A review of learning in biologically plausible spiking neural networks](https://www.sciencedirect.com/science/article/abs/pii/S0893608019303181)。
 
     -  论文发表时间：2020.2
