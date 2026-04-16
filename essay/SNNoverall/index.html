@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#0-introduction" class="md-skip">
+        <a href="#snnoverall" class="md-skip">
           Skip to content
         </a>
       
@@ -607,6 +607,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNNoverall
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -623,6 +641,1450 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 回顾SNN学习算法的生物学背景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 回顾SNN学习算法的生物学背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 SNN神经元模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 SNN神经元模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-hodgkinhuxley-1952" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.1 Hodgkin–Huxley 模型（1952）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-lifleaky-integrate-and-fire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.2 LIF（Leaky Integrate-and-Fire）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）直观理解：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）输入电流的计算：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3spike-train" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）spike train
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）神经元何时释放spike
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （5）整体流程总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-srmspike-response-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.3 SRM（Spike Response Model）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 神经元如何处理输入 spike
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 神经元如何处理输入 spike">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-integrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 Integrator（积分型神经元）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-coincidence-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 Coincidence Detector（同步检测）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-snnsynaptic-plasticity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 SNN的学习机制——突触可塑性（Synaptic Plasticity）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 SNN的学习机制——突触可塑性（Synaptic Plasticity）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1 什么是突触可塑性与学习的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2 学习种类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1321-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.1 Unsupervised learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1） 无监督学习的本质机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2hebbian-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）Hebbian learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）STDP：无监督学习的具体实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）怎么做到classification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1322-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.2 监督学习（Supervised learning）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1323-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.3 强化学习Reinforcement learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1324-delay-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.4 延迟学习Delay learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-information-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.3 信息编码（information encoding）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1rate-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）rate coding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2temporal-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）temporal coding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4 SNN的拓扑结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1341" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4.1 三种拓扑的连接结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1342" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4.2 生物大脑的结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1343" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4.3 拓扑的变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 学习算法的重要组成部分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 学习算法的重要组成部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-learning-a-single-spike-per-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Learning a single spike per neuron
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Learning a single spike per neuron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1spikeprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）spikeprop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikepropcnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop与CNN的区别和问题在于：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SpikeProp的解决方法：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop的基本内容
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop的改进
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop的模型假设的限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2som-like-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）SOM-like SNN(自组织映射)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-esnnevolving-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3） eSNN(evolving SNN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3desnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）deSNN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rank-order-learing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rank Order learing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDSP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5tempotron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （5）Tempotron
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        现有单脉冲方法的共同问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-learning-multiple-spikes-in-a-single-neuron-or-a-single-layer-of-neurons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Learning multiple spikes in a single neuron or a single layer of neurons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Learning multiple spikes in a single neuron or a single layer of neurons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1supervised-hebbian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）supervised hebbian
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2statistical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）statistical methods（统计方法）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）ReSuMe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        机制：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解决问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        任务形式：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        各个符号：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        它的核心学习公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么它可以学别人不会的multiple spike?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReSuMe的优缺点：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReSuMe的局限
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4span" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）SPAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step1spike-train" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step1：先将spike train转换成连续信号：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step2：输入输出都变成连续信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step3widrow-hoff-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step3：用Widrow-Hoff(Δ rule)学习
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step4spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step4：再转会spike
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPAN的优点：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPAN的限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5chronotron-version1-e-learnig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （5）Chronotron version1 E-learnig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step1：用核函数表示神经元的响应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-normalized-psp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step 2：定义 normalized PSP（λ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step 3：定义误差函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6chronotron-i-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （6）Chronotron I-learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7swat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （7）SWAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8dl-resumedelay-learning-resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （8）DL-ReSuMe（Delay Learning ReSuMe）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        动机：ReSuMe的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d_itextsynaptic-delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心思想：引入\(d_i​=\text{synaptic delay}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么做？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结果上的优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edlextended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解决方案：EDL（extended）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9lsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （9）LSM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LSM的整体结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LSM在做什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原理：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一个比喻：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优势：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限制：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关改进：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10polychronous-groupslsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （10）polychronous groups+LSM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        整体问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-learning-multiple-spikes-in-a-multilayer-spiking-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Learning multiple spikes in a multilayer spiking neural network
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 多层结构于多脉冲编码的必要性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 现有研究的演进和局限性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 现有研究的演进和局限性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1stdp-multilayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）STDP multilayer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2gradient-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）Gradient methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3xu-2013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）Xu 2013
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）基于梯度的SNN学习方法所面临的局限性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 转向STDP的局部学习
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 转向STDP的局部学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）常规STDP的问题和改进方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）对前面STDP的改进版
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 总结于分类
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 总结于分类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rate-coding-vs-temporal-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rate coding vs. temporal coding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-learning-algorithms-with-delay-leaning-ability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Learning algorithms with delay leaning ability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Learning algorithms with delay leaning ability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1delay-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）Delay Selection（延迟选择）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2delay-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）delay shift（延迟移动）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-deep-spiking-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Deep Spiking Neural Networks（深度脉冲神经网络）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Deep Spiking Neural Networks（深度脉冲神经网络）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-backpropagationbp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1 Backpropagation（直接做BP）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0backpropagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （0）普通神经网络里面的backpropagation是怎么做的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1snn-bp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）SNN 不能直接BP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法：就是构造一个可到替代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-spiking-cnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.2 Spiking CNN（卷积结构）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        层次结构：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253-semi-supervised" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.3 Semi-supervised（半监督/预训练）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1auto-encoderpanda-2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法1：Auto-Encoder(Panda 2016)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2stdpbplee-2018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法2：STDP+BP(Lee 2018)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3dbnrbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法3：DBN/RBM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#254-dnndsnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.4 DNN→DSNN 转换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dnndeep-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNN（deep neural network）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsnndeep-spiking-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSNN（deep spiking neural network）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么训练的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#255-recurrent-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.5 Recurrent SNN（时序模型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bptt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标准解法：BPTT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 对单脉冲和多脉冲的SNN最新算法的评价
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -745,6 +2207,1439 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 回顾SNN学习算法的生物学背景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 回顾SNN学习算法的生物学背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 SNN神经元模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 SNN神经元模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-hodgkinhuxley-1952" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.1 Hodgkin–Huxley 模型（1952）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-lifleaky-integrate-and-fire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.2 LIF（Leaky Integrate-and-Fire）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）直观理解：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）输入电流的计算：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3spike-train" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）spike train
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）神经元何时释放spike
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （5）整体流程总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-srmspike-response-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.3 SRM（Spike Response Model）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 神经元如何处理输入 spike
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 神经元如何处理输入 spike">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-integrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 Integrator（积分型神经元）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-coincidence-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 Coincidence Detector（同步检测）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-snnsynaptic-plasticity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 SNN的学习机制——突触可塑性（Synaptic Plasticity）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 SNN的学习机制——突触可塑性（Synaptic Plasticity）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1 什么是突触可塑性与学习的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2 学习种类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1321-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.1 Unsupervised learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1） 无监督学习的本质机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2hebbian-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）Hebbian learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）STDP：无监督学习的具体实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）怎么做到classification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1322-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.2 监督学习（Supervised learning）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1323-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.3 强化学习Reinforcement learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1324-delay-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2.4 延迟学习Delay learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-information-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.3 信息编码（information encoding）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1rate-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）rate coding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2temporal-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）temporal coding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4 SNN的拓扑结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1341" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4.1 三种拓扑的连接结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1342" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4.2 生物大脑的结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1343" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4.3 拓扑的变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 学习算法的重要组成部分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 学习算法的重要组成部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-learning-a-single-spike-per-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Learning a single spike per neuron
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Learning a single spike per neuron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1spikeprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）spikeprop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikepropcnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop与CNN的区别和问题在于：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SpikeProp的解决方法：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop的基本内容
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop的改进
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeprop_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeprop的模型假设的限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2som-like-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）SOM-like SNN(自组织映射)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-esnnevolving-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3） eSNN(evolving SNN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3desnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）deSNN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rank-order-learing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rank Order learing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDSP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5tempotron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （5）Tempotron
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        现有单脉冲方法的共同问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-learning-multiple-spikes-in-a-single-neuron-or-a-single-layer-of-neurons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Learning multiple spikes in a single neuron or a single layer of neurons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Learning multiple spikes in a single neuron or a single layer of neurons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1supervised-hebbian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）supervised hebbian
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2statistical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）statistical methods（统计方法）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）ReSuMe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        机制：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解决问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        任务形式：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        各个符号：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        它的核心学习公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么它可以学别人不会的multiple spike?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReSuMe的优缺点：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReSuMe的局限
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4span" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）SPAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step1spike-train" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step1：先将spike train转换成连续信号：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step2：输入输出都变成连续信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step3widrow-hoff-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step3：用Widrow-Hoff(Δ rule)学习
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step4spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step4：再转会spike
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPAN的优点：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPAN的限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5chronotron-version1-e-learnig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （5）Chronotron version1 E-learnig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step1：用核函数表示神经元的响应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-normalized-psp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step 2：定义 normalized PSP（λ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        step 3：定义误差函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6chronotron-i-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （6）Chronotron I-learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7swat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （7）SWAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8dl-resumedelay-learning-resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （8）DL-ReSuMe（Delay Learning ReSuMe）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        动机：ReSuMe的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d_itextsynaptic-delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心思想：引入\(d_i​=\text{synaptic delay}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么做？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结果上的优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edlextended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解决方案：EDL（extended）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9lsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （9）LSM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LSM的整体结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LSM在做什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原理：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一个比喻：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优势：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限制：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关改进：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10polychronous-groupslsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （10）polychronous groups+LSM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        整体问题：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-learning-multiple-spikes-in-a-multilayer-spiking-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Learning multiple spikes in a multilayer spiking neural network
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 多层结构于多脉冲编码的必要性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 现有研究的演进和局限性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 现有研究的演进和局限性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1stdp-multilayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）STDP multilayer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2gradient-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）Gradient methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3xu-2013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）Xu 2013
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）基于梯度的SNN学习方法所面临的局限性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 转向STDP的局部学习
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 转向STDP的局部学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）常规STDP的问题和改进方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2stdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）对前面STDP的改进版
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 总结于分类
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 总结于分类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rate-coding-vs-temporal-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rate coding vs. temporal coding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-learning-algorithms-with-delay-leaning-ability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Learning algorithms with delay leaning ability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Learning algorithms with delay leaning ability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1delay-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）Delay Selection（延迟选择）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2delay-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）delay shift（延迟移动）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-deep-spiking-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Deep Spiking Neural Networks（深度脉冲神经网络）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Deep Spiking Neural Networks（深度脉冲神经网络）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-backpropagationbp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1 Backpropagation（直接做BP）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0backpropagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （0）普通神经网络里面的backpropagation是怎么做的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1snn-bp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）SNN 不能直接BP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法：就是构造一个可到替代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-spiking-cnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.2 Spiking CNN（卷积结构）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        层次结构：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253-semi-supervised" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.3 Semi-supervised（半监督/预训练）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1auto-encoderpanda-2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法1：Auto-Encoder(Panda 2016)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2stdpbplee-2018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法2：STDP+BP(Lee 2018)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3dbnrbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法3：DBN/RBM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#254-dnndsnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.4 DNN→DSNN 转换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dnndeep-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNN（deep neural network）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsnndeep-spiking-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSNN（deep spiking neural network）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么训练的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#255-recurrent-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.5 Recurrent SNN（时序模型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bptt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标准解法：BPTT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-snn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 对单脉冲和多脉冲的SNN最新算法的评价
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -760,16 +3655,17 @@
 
 
 
-<p>本片论文的原文地址：<a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608019303181">A review of learning in biologically plausible spiking neural networks</a>。</p>
+<h1 id="snnoverall">SNNoverall<a class="headerlink" href="#snnoverall" title="Permanent link">&para;</a></h1>
+<p>本文的原文地址：<a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608019303181">A review of learning in biologically plausible spiking neural networks</a>。</p>
 <div class="highlight"><pre><span></span><code>-  论文发表时间：2020.2
 </code></pre></div>
-<h1 id="0-introduction">0. introduction<a class="headerlink" href="#0-introduction" title="Permanent link">&para;</a></h1>
+<h2 id="0-introduction">0. introduction<a class="headerlink" href="#0-introduction" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>前情提要：ANN的灵感本来就来源于生物神系统，但是和生物饿神经元相比，人工神经网络的抽象程度高，且无法捕捉生物神经元复杂的动态时间特性，这个就是SNN的诞生契机。</p>
+<p>前情提要：ANN的灵感本来就来源于生物神经系统，但是和生物神经元相比，人工神经网络的抽象程度高，且无法捕捉生物神经元复杂的动态时间特性，这个就是SNN的诞生契机。</p>
 </li>
 <li>
-<p>由于SNN能够捕捉生物学原理的神经元丰富的动态特征，并且表示成和时间、频率和相位等不同信息维度，因此它们提供了一种非常有前景的计算模式，并且可能模拟初大脑中复杂的信息处理过程</p>
+<p>由于SNN能够捕捉生物学原理的神经元丰富的动态特征，并且表示成和时间、频率和相位等不同信息维度，因此它们提供了一种非常有前景的计算模式，并且可能模拟出大脑中复杂的信息处理过程</p>
 <ul>
 <li>
 <p>SNN还有处理海量数据和利用脉冲序列进行信息表示的潜力</p>
@@ -786,13 +3682,13 @@
 <p>传统观点认为是频率编码→<span class="arithmatex">\(Information∝firing \text{ } rate\)</span></p>
 </li>
 <li>
-<p>问题在于这和人类大脑处理信息的速度是由很大不同的</p>
+<p>问题在于这和人类大脑处理信息的速度有很大不同</p>
 <ul>
 <li>
 <p>比如说视觉神经中<span class="arithmatex">\(10层神经元\times 10ms反应时间\)</span><span class="arithmatex">\(=100ms\)</span></p>
 </li>
 <li>
-<p>如果使用频率编码就要统计一段时间内的spike数量，需要100m或更长的时间才能统计频率，从而导致没有足够时间计算频率</p>
+<p>如果使用频率编码就要统计一段时间内的spike数量，需要100 ms 或更长的时间才能统计频率，从而导致没有足够时间计算频率</p>
 </li>
 </ul>
 </li>
@@ -823,20 +3719,22 @@
 <p>新的研究进展：</p>
 <ul>
 <li>
-<p>生物学家发信多种形式的生物突触的可塑性→是由神经元当店调控的。</p>
+<p>生物学家发现多种形式的生物突触可塑性→是由神经元放电调控的。</p>
 </li>
 <li>
-<p>这个和不同形式的突触权重和延迟学习的SNN模型实相符的</p>
+<p>这个和不同形式的突触权重和延迟学习的SNN模型是相符的</p>
 </li>
 </ul>
 </li>
 </ul>
-<h1 id="1-snn">1. 回顾SNN学习算法的生物学背景<a class="headerlink" href="#1-snn" title="Permanent link">&para;</a></h1>
+<h2 id="1-snn">1. 回顾SNN学习算法的生物学背景<a class="headerlink" href="#1-snn" title="Permanent link">&para;</a></h2>
 <p>神经元通过突触相互连接，形成复杂的结构。文献综述表明，设计脉冲神经网络（SNN）学习算法时需要考虑的重要因素包括：神经元模型、突触通信、网络拓扑结构以及信息。</p>
-<h2 id="11-snn">1.1 SNN神经元模型<a class="headerlink" href="#11-snn" title="Permanent link">&para;</a></h2>
-<h3 id="111-hodgkinhuxley-1952">1.1.1 Hodgkin–Huxley 模型（1952）<a class="headerlink" href="#111-hodgkinhuxley-1952" title="Permanent link">&para;</a></h3>
+<h3 id="11-snn">1.1 SNN神经元模型<a class="headerlink" href="#11-snn" title="Permanent link">&para;</a></h3>
+<h4 id="111-hodgkinhuxley-1952">1.1.1 Hodgkin–Huxley 模型（1952）<a class="headerlink" href="#111-hodgkinhuxley-1952" title="Permanent link">&para;</a></h4>
 <p>最真实的生物学模型：<strong>4维微分方程、</strong>描述离子通道电导、能真实复现神经电生理行为</p>
-<p><span class="arithmatex">\(C\frac{dV}{dt​}=I−g_{N_a}​m^3h(V−E_{N_a}​)−g_K​n^4(V−E_K​)−g_L​(V−E_L​)\)</span></p>
+<div class="arithmatex">\[
+C\frac{dV}{dt​}=I−g_{N_a}​m^3h(V−E_{N_a}​)−g_K​n^4(V−E_K​)−g_L​(V−E_L​)
+\]</div>
 <ul>
 <li>
 <p>优点就是生物真实性高</p>
@@ -849,10 +3747,12 @@
 </li>
 </ul>
 <p>所以我们需要的是简化模型</p>
-<h3 id="112-lifleaky-integrate-and-fire">1.1.2 LIF（Leaky Integrate-and-Fire）<a class="headerlink" href="#112-lifleaky-integrate-and-fire" title="Permanent link">&para;</a></h3>
+<h4 id="112-lifleaky-integrate-and-fire">1.1.2 LIF（Leaky Integrate-and-Fire）<a class="headerlink" href="#112-lifleaky-integrate-and-fire" title="Permanent link">&para;</a></h4>
 <p>是常见的SNN神经元</p>
 <p>模型：</p>
-<p><span class="arithmatex">\(τ_m\frac{dv_m(t)}{dt}​=−(v_m(t)−E_r​)+R_mI(t)\)</span></p>
+<div class="arithmatex">\[
+τ_m\frac{dv_m(t)}{dt}​=−(v_m(t)−E_r​)+R_mI(t)
+\]</div>
 <ul>
 <li>
 <p><span class="arithmatex">\(v_m(t)\)</span>：膜电位</p>
@@ -896,12 +3796,16 @@
 </li>
 </ul>
 <h4 id="2">（2）输入电流的计算：<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(I(t)=W⋅S(t)\)</span></p>
+<div class="arithmatex">\[
+I(t)=W⋅S(t)
+\]</div>
 <p>其中<span class="arithmatex">\(W=[w_1​,w_2​,...,w_N​]\)</span>表示突触权重。</p>
 <p>而<span class="arithmatex">\(S(t)=[s_1​(t),s_2​(t),...,s_N​(t)]\)</span>表示输入spike信号</p>
 <p>含义就是每个输入神经元：<span class="arithmatex">\(spike\times weight\)</span> 贡献一个电流</p>
 <h4 id="3spike-train">（3）spike train<a class="headerlink" href="#3spike-train" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(s_i​(t)=∑_f ​δ(t−ti^f​)\)</span></p>
+<div class="arithmatex">\[
+s_i​(t)=∑_f ​δ(t−ti^f​)
+\]</div>
 <ul>
 <li>
 <p><span class="arithmatex">\(ti^f​\)</span>：第f和spike的时间</p>
@@ -926,7 +3830,9 @@
 <p>只保留：spike发生的时间。这就是 <span class="arithmatex">\(δ\)</span> 函数。</p>
 <h4 id="4spike">（4）神经元何时释放spike<a class="headerlink" href="#4spike" title="Permanent link">&para;</a></h4>
 <p>当膜电位达到阈值：</p>
-<p><span class="arithmatex">\(v_m(t) \geq V_{th}\)</span></p>
+<div class="arithmatex">\[
+v_m(t) \geq V_{th}
+\]</div>
 <p>神经元产生：output spike；然后reset回到<span class="arithmatex">\(E_r\)</span>这个电位上</p>
 <p>之后短时间内不能再发spike，这段时间：<span class="arithmatex">\(t_{ref}\)</span>叫做<strong>refractory period(不应期)</strong></p>
 <h4 id="5">（5）整体流程总结<a class="headerlink" href="#5" title="Permanent link">&para;</a></h4>
@@ -946,25 +3852,29 @@
 </code></pre></div>
 <p>输入电流的计算：</p>
 <p>当：</p>
-<p><span class="arithmatex">\(V&gt;V_{threshold​}\)</span></p>
+<div class="arithmatex">\[
+V&gt;V_{threshold​}
+\]</div>
 <p>时，就会产生spike，然后reset</p>
 <ul>
 <li>
 <p>优点是非常简单，计算快</p>
 </li>
 <li>
-<p>缺点是生物真是性质较低</p>
+<p>缺点是生物真实性较低</p>
 </li>
 </ul>
-<h3 id="113-srmspike-response-model">1.1.3 SRM（Spike Response Model）<a class="headerlink" href="#113-srmspike-response-model" title="Permanent link">&para;</a></h3>
+<h4 id="113-srmspike-response-model">1.1.3 SRM（Spike Response Model）<a class="headerlink" href="#113-srmspike-response-model" title="Permanent link">&para;</a></h4>
 <p>这个也是一种简化模型</p>
-<p>特点：用核函数藐视spike对膜电位的影响</p>
+<p>特点：用核函数描述 spike 对膜电位的影响</p>
 <hr />
-<h2 id="12-spike">1.2 神经元如何处理输入spike<a class="headerlink" href="#12-spike" title="Permanent link">&para;</a></h2>
-<h3 id="121-intergrator">1.2.1 Intergrator（积分型神经元）<a class="headerlink" href="#121-intergrator" title="Permanent link">&para;</a></h3>
+<h3 id="12-spike">1.2 神经元如何处理输入 spike<a class="headerlink" href="#12-spike" title="Permanent link">&para;</a></h3>
+<h4 id="121-integrator">1.2.1 Integrator（积分型神经元）<a class="headerlink" href="#121-integrator" title="Permanent link">&para;</a></h4>
 <p>机制上就是：输入spike→累加</p>
 <p>神经元会在较长时间窗口内输入：</p>
-<p><span class="arithmatex">\(V(t)=∑PSP_i​(t)\)</span></p>
+<div class="arithmatex">\[
+V(t)=∑PSP_i​(t)
+\]</div>
 <p>只要超过总和阈值就可以了。</p>
 <p>特点：</p>
 <ul>
@@ -976,9 +3886,9 @@
 </li>
 </ul>
 <p>合适：rate coding</p>
-<h3 id="122-coincidence-detector">1.2.2 Coincidence Detector(同步检测)<a class="headerlink" href="#122-coincidence-detector" title="Permanent link">&para;</a></h3>
+<h4 id="122-coincidence-detector">1.2.2 Coincidence Detector（同步检测）<a class="headerlink" href="#122-coincidence-detector" title="Permanent link">&para;</a></h4>
 <p>CD神经元只对同时到达的spike敏感。</p>
-<p>如果两个spike时间差很小：<span class="arithmatex">\(Δt&lt;ϵ\)</span> 就会出发spike。</p>
+<p>如果两个spike时间差很小：<span class="arithmatex">\(Δt&lt;ϵ\)</span> 就会触发spike。</p>
 <p>特点：</p>
 <ul>
 <li>
@@ -990,14 +3900,16 @@
 </ul>
 <p>这个在生物学中相关的对应内容就是听力定位等等</p>
 <hr />
-<h2 id="13-snnsynaptic-plasticity">1.3 SNN的学习机制——突触可塑性（Synaptic Plasticity）<a class="headerlink" href="#13-snnsynaptic-plasticity" title="Permanent link">&para;</a></h2>
-<h3 id="131">1.3.1 什么是突触可塑性与学习的关系<a class="headerlink" href="#131" title="Permanent link">&para;</a></h3>
-<p>之所以需要进行突突触的改变：</p>
+<h3 id="13-snnsynaptic-plasticity">1.3 SNN的学习机制——突触可塑性（Synaptic Plasticity）<a class="headerlink" href="#13-snnsynaptic-plasticity" title="Permanent link">&para;</a></h3>
+<h4 id="131">1.3.1 什么是突触可塑性与学习的关系<a class="headerlink" href="#131" title="Permanent link">&para;</a></h4>
+<p>之所以需要进行突触的改变：</p>
 <p><strong>突触强度（weight）会根据神经元活动发生改变</strong></p>
 <p>也就是说</p>
-<p><span class="arithmatex">\(w_{ij}​→w_{ij}​+Δw\)</span></p>
+<div class="arithmatex">\[
+w_{ij}​→w_{ij}​+Δw
+\]</div>
 <p>所以我们在这里的学习就是改变连接的强度</p>
-<h3 id="132">1.3.2 学习种类<a class="headerlink" href="#132" title="Permanent link">&para;</a></h3>
+<h4 id="132">1.3.2 学习种类<a class="headerlink" href="#132" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1034,7 +3946,9 @@
 </code></pre></div>
 <h4 id="1_1">（1） 无监督学习的本质机制<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
 <p>可以抽象成：</p>
-<p><span class="arithmatex">\(Δw=f(\text{pre spike,post spike,t})\)</span></p>
+<div class="arithmatex">\[
+Δw=f(\text{pre spike,post spike,t})
+\]</div>
 <p>这也就是：权重变化=spike之间的关系</p>
 <h4 id="2hebbian-learning">（2）Hebbian learning<a class="headerlink" href="#2hebbian-learning" title="Permanent link">&para;</a></h4>
 <p>核心的经典规则就是：<strong>Cells that fire together wire together</strong></p>
@@ -1045,21 +3959,31 @@
 <ul>
 <li>spike timing dependent plasicity：基于脉冲时间的突触可塑性</li>
 </ul>
-<p><span class="arithmatex">\(t=t_{post}​−t_{pre}​\)</span></p>
+<div class="arithmatex">\[
+t=t_{post}​−t_{pre}​
+\]</div>
 <p>即：按照时间顺序来决定是增强还是减弱</p>
 <p><strong>情况1：pre在前（因果）</strong></p>
 <ul>
 <li>学习规则</li>
 </ul>
-<p><span class="arithmatex">\(\text{如果t&gt;0   (即pre在前)}\)</span></p>
-<p><span class="arithmatex">\(Δw=A_+​e^{−t/τ+}​\)</span></p>
+<div class="arithmatex">\[
+\text{如果t&gt;0   (即pre在前)}
+\]</div>
+<div class="arithmatex">\[
+Δw=A_+​e^{−t/τ+}​
+\]</div>
 <p>权重增加（LTP）</p>
 <p><strong>情况 2：post 在前（非因果）</strong></p>
 <ul>
 <li>学习规则</li>
 </ul>
-<p><span class="arithmatex">\(t&lt;0\)</span></p>
-<p><span class="arithmatex">\(Δw=−A_−​e^{t/τ−}​\)</span></p>
+<div class="arithmatex">\[
+t&lt;0
+\]</div>
+<div class="arithmatex">\[
+Δw=−A_−​e^{t/τ−}​
+\]</div>
 <p>权重减小</p>
 <p>STDP其实是在学习：谁更像原因→谁就会被加强</p>
 <p><img alt="image.png" src="../SNNoverall-assets/image.png" /></p>
@@ -1105,11 +4029,13 @@
 <span class="o">+</span><span class="w"> </span><span class="n">reward</span><span class="w">  </span><span class="err">→</span><span class="w"> </span><span class="n">reinforcement</span>
 <span class="o">+</span><span class="w"> </span><span class="n">delay</span><span class="w">   </span><span class="err">→</span><span class="w"> </span><span class="n">timing</span><span class="w"> </span><span class="n">alignment</span>
 </code></pre></div>
-<h3 id="133-information-encoding">1.3.3 信息编码（information encoding）<a class="headerlink" href="#133-information-encoding" title="Permanent link">&para;</a></h3>
+<h4 id="133-information-encoding">1.3.3 信息编码（information encoding）<a class="headerlink" href="#133-information-encoding" title="Permanent link">&para;</a></h4>
 <p>神经元使用spike传递信息，但是这个信息到底在哪里</p>
 <h4 id="1rate-coding">（1）rate coding<a class="headerlink" href="#1rate-coding" title="Permanent link">&para;</a></h4>
 <p>信息来自于发送了多少次spike</p>
-<p><span class="arithmatex">\(information∝firing rate\)</span></p>
+<div class="arithmatex">\[
+information∝firing rate
+\]</div>
 <h4 id="2temporal-coding">（2）temporal coding<a class="headerlink" href="#2temporal-coding" title="Permanent link">&para;</a></h4>
 <p>信息来自于发送的时间</p>
 <p>顺序/时间差 本身就是信息</p>
@@ -1133,7 +4059,7 @@
 <p>Polychronization——一组神经元在不同时间精准配合</p>
 </li>
 </ul>
-<h3 id="134-snn">1.3.4 SNN的拓扑结构<a class="headerlink" href="#134-snn" title="Permanent link">&para;</a></h3>
+<h4 id="134-snn">1.3.4 SNN的拓扑结构<a class="headerlink" href="#134-snn" title="Permanent link">&para;</a></h4>
 <p>拓扑结构简单理解就是：这些神经元是怎么连接在一起的</p>
 <h4 id="1341">1.3.4.1 三种拓扑的连接结构<a class="headerlink" href="#1341" title="Permanent link">&para;</a></h4>
 <p><strong>（1）feed-forward</strong></p>
@@ -1189,9 +4115,9 @@
 <ul>
 <li>这个模型不仅仅学习经典的的权重w，还学习连接关系，甚至会长出新的连接/旧的连接删除</li>
 </ul>
-<h1 id="2_1">2. 学习算法的重要组成部分<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h1>
-<h2 id="21-learning-a-single-spike-per-neuron">2.1. Learning a single spike per neuron<a class="headerlink" href="#21-learning-a-single-spike-per-neuron" title="Permanent link">&para;</a></h2>
-<h3 id="1spikeprop">（1）spikeprop<a class="headerlink" href="#1spikeprop" title="Permanent link">&para;</a></h3>
+<h2 id="2_1">2. 学习算法的重要组成部分<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h2>
+<h3 id="21-learning-a-single-spike-per-neuron">2.1. Learning a single spike per neuron<a class="headerlink" href="#21-learning-a-single-spike-per-neuron" title="Permanent link">&para;</a></h3>
+<h4 id="1spikeprop">（1）spikeprop<a class="headerlink" href="#1spikeprop" title="Permanent link">&para;</a></h4>
 <p>有点类似由于强行将ANN的训练方法搬运到SNN上面，区别就是在SNN里面的spike是不连续的，所以梯度不好算</p>
 <p>会出现局部最优和有些神经元不发的效果</p>
 <h4 id="spikepropcnn"><strong>spikeprop与CNN的区别和问题在于：</strong><a class="headerlink" href="#spikepropcnn" title="Permanent link">&para;</a></h4>
@@ -1242,7 +4168,7 @@
 <p>SpikeProp 的灵感来源于经典的反向传播算法。SpikeProp 是一种多层脉冲神经网络，已成功应用于分类问题。在该网络中，两个神经元通过具有不同权重和延迟的多条连接相互连接(见下图)。</p>
 <p><img alt="图b中，我们可以看到，一个神经元产生的spike可以被不同的管道，因为不同的PSP，再到达下一个神经元。最后这个接受的神经元的最终输出就是所有PSP的时间叠加的最终结果" src="../SNNoverall-assets/image-1.png" />
 图b中，我们可以看到，一个神经元产生的spike可以被不同的管道，因为不同的PSP，再到达下一个神经元。最后这个接受的神经元的最终输出就是所有PSP的时间叠加的最终结果</p>
-<p>与其它基于梯度的方法类似，SpikeProp 也基于误差函数梯度的估计，因此存在局部最小值问题。此外，静默神经元或不激活神经元的存在也会阻碍梯度的计算（这个的意思就i是有时候spike根本没有发出相关的信号，我们的梯度链条可能会断掉。这个训练目标依赖于spike time，没有spike time就没有梯度入口）。</p>
+<p>与其它基于梯度的方法类似，SpikeProp 也基于误差函数梯度的估计，因此存在局部最小值问题。此外，静默神经元或不激活神经元的存在也会阻碍梯度的计算（这个的意思就是有时候 spike 根本没有发出相关的信号，我们的梯度链条可能会断掉。这个训练目标依赖于 spike time，没有 spike time 就没有梯度入口）。</p>
 <h4 id="spikeprop_2">spikeprop的改进<a class="headerlink" href="#spikeprop_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
@@ -1266,7 +4192,9 @@
 <p>模型假设每个神经元只发一个spike。</p>
 <p>因为如果发了很多的spike，我们就要找spike的关系，再计算上就会变得非常复杂</p>
 <p>所以只发一个spike我们就可以简化成：</p>
-<p><span class="arithmatex">\(E=\frac{1}{2}​∑_j​(t_j​−t_j^d​)^2\)</span></p>
+<div class="arithmatex">\[
+E=\frac{1}{2}​∑_j​(t_j​−t_j^d​)^2
+\]</div>
 <ul>
 <li>
 <p><span class="arithmatex">\(t_j\)</span>：实际发放时间</p>
@@ -1278,39 +4206,45 @@
 <p>这样我们的反向传播就更加容易建立</p>
 <p>spikeprop与神经元模型绑定很深，每次换一个神经元模型（SRM、LIF等）对应的膜电位，阈值等所有的形式都不一样，所以一定发生改变</p>
 <p>因为这个局限性，有人采用进化策略训练突触权重和延迟，和spikeprop相比，该方法性能良好，但是训练算法耗时较长</p>
-<h3 id="2som-like-snn">（2）SOM-like SNN(自组织映射)<a class="headerlink" href="#2som-like-snn" title="Permanent link">&para;</a></h3>
+<h4 id="2som-like-snn">（2）SOM-like SNN(自组织映射)<a class="headerlink" href="#2som-like-snn" title="Permanent link">&para;</a></h4>
 <p>基于自组织（Self-Organizing）+ Hebbian + delay 学习的 SNN 聚类模型。</p>
 <p>核心思想是：不学习“权重”，而是学习delay，让输入spike在时间上对齐，从而触发某些神经元→实现聚类</p>
 <p><img alt="25322f1c599aa697cf05ce69930bef68.jpg" src="../SNNoverall-assets/figure-1.jpg" /></p>
 <p><a href="../SNNoverall-assets/detailed-process/">详细的流程</a></p>
 <p>这样子，通过循环，相似输入会把同一片区域一起塑形，因此映射成相邻神经元。</p>
-<h3 id="3-esnnevolving-snn">（3） eSNN(evolving SNN)<a class="headerlink" href="#3-esnnevolving-snn" title="Permanent link">&para;</a></h3>
+<h4 id="3-esnnevolving-snn">（3） eSNN(evolving SNN)<a class="headerlink" href="#3-esnnevolving-snn" title="Permanent link">&para;</a></h4>
 <p>结构是会变化的，使网络会自己长大，所用的编码就是SOC，并只看第一个spike</p>
 <p>问题是：忽略了后面的spike，丢掉了temporal信息，表达能力弱</p>
-<p>eSNN是基于Hebbian learning的，也就说类似于“一起活动的神经元，连接会加强”这种思路；比较适合online learning,不需要像普通深度网络那样将整个数据集反复训练很多论；先将输入先编码成spike timing（谁先发spike，谁后发spike的顺序来表示信息）</p>
+<p>eSNN是基于Hebbian learning的，也就是说类似于“一起活动的神经元，连接会加强”这种思路；比较适合online learning，不需要像普通深度网络那样将整个数据集反复训练很多轮；先将输入编码成spike timing（谁先发spike，谁后发spike的顺序来表示信息）</p>
 <p>evolving主要是指：当先输入样本到来的时候，网络不会只是按照固定参数去计算。网络会根据样本决定（让已有的神经元代表这个模式or新建一个神经元来表示一个新的输入模式），所以是会evolving的。</p>
 <p>批评了eSNN的重点，只利用每个输入突触上的first spike，后面的spike基本忽略。</p>
 <p><img alt="2c5c5bbe8597bfcaea81615d133eca20.jpg" src="../SNNoverall-assets/figure-2.jpg" /></p>
-<p>L1：contrasr cells（初级对比检测，比如亮暗变化、局部刺激）</p>
+<p>L1：contrast cells（初级对比检测，比如亮暗变化、局部刺激）</p>
 <p>L2：orientation cells（这一层像是在检测方向特征，比如横线、竖线、斜线）</p>
 <p>L3：complex cells（主要的学习发生在这里）</p>
 <p>L4：Class（这一层是分类输出层，把 L3 的结果整合起来，输出类别 1、类别 2 等）</p>
 <p>在L3中输入编码和学习主要依赖于first spike / rank order，所以这个是eSNN的主要缺陷</p>
-<h3 id="3desnn">（3）deSNN<a class="headerlink" href="#3desnn" title="Permanent link">&para;</a></h3>
+<h4 id="3desnn">（3）deSNN<a class="headerlink" href="#3desnn" title="Permanent link">&para;</a></h4>
 <p>在eSNN的基础上进行改变。</p>
-<p>我们在上面可以看到，原始的eSNN只用first spike，忽略后续的spike，从而它的表达能力是有限的，尤其是编队复杂的脉冲式模式</p>
+<p>我们在上面可以看到，原始的eSNN只用first spike，忽略后续的spike，从而它的表达能力是有限的，尤其是编码复杂的脉冲式模式</p>
 <h4 id="rank-order-learing">Rank Order learing<a class="headerlink" href="#rank-order-learing" title="Permanent link">&para;</a></h4>
-<p>任然保留Rank Order learing，也就是</p>
-<p><span class="arithmatex">\(w_i^{init}​∝rank(t_i^{first}​)\)</span></p>
+<p>仍然保留Rank Order learing，也就是</p>
+<div class="arithmatex">\[
+w_i^{init}​∝rank(t_i^{first}​)
+\]</div>
 <p>谁先spike→初始权重大</p>
 <p>谁后spike→初始权重小</p>
 <p>这一部分负责快速建立初始模式</p>
 <h4 id="sdsp">SDSP<a class="headerlink" href="#sdsp" title="Permanent link">&para;</a></h4>
 <p>加入了Spike Driven Synaptic Plasticity，也就是deSNN的关键</p>
 <p><strong>规则1：收到spike→权重增强</strong></p>
-<p><span class="arithmatex">\(\text{if spike arrives}: w↑\)</span></p>
+<div class="arithmatex">\[
+\text{if spike arrives}: w↑
+\]</div>
 <p><strong>规则2：没有收到spike→权重减弱</strong></p>
-<p><span class="arithmatex">\(\text{if no spike: w↓}\)</span></p>
+<div class="arithmatex">\[
+\text{if no spike: w↓}
+\]</div>
 <p>因为这个会依赖后面的spike的发生，所以很好的规避了eSNN的问题</p>
 <p>整体看来，就是我们先用rank-first的方式，得到一个基础的w，之后使用SDSP的方式继续对w进行微调</p>
 <p>eSNN/deSNN的神经元模型不是标准的生物模型，而是“基于顺序”的简化模型。</p>
@@ -1331,7 +4265,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="5tempotron">（5）Tempotron<a class="headerlink" href="#5tempotron" title="Permanent link">&para;</a></h3>
+<h4 id="5tempotron">（5）Tempotron<a class="headerlink" href="#5tempotron" title="Permanent link">&para;</a></h4>
 <p>是一个有监督学习的SNN neuron，用于做二分类</p>
 <p>做分类（0/1）</p>
 <p>核心规则就是如果和预期不符，就削弱权重，反之增加</p>
@@ -1339,7 +4273,7 @@
 <p>改进：</p>
 <p>Encoding→Trempotron→readout</p>
 <p>特点：使用每个latency coding，每个neuron只发一个spike</p>
-<h3 id="_1">现有单脉冲方法的共同问题：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h4 id="_1">现有单脉冲方法的共同问题：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>eSNN / deSNN
@@ -1354,7 +4288,7 @@
 → 仍然 single spike</p>
 </li>
 </ol>
-<h2 id="22-learning-multiple-spikes-in-a-single-neuron-or-a-single-layer-of-neurons">2.2 Learning multiple spikes in a single neuron or a single layer of neurons<a class="headerlink" href="#22-learning-multiple-spikes-in-a-single-neuron-or-a-single-layer-of-neurons" title="Permanent link">&para;</a></h2>
+<h3 id="22-learning-multiple-spikes-in-a-single-neuron-or-a-single-layer-of-neurons">2.2 Learning multiple spikes in a single neuron or a single layer of neurons<a class="headerlink" href="#22-learning-multiple-spikes-in-a-single-neuron-or-a-single-layer-of-neurons" title="Permanent link">&para;</a></h3>
 <p><a href="../SNNoverall-assets/summary/">总结</a></p>
 <p>上面2.1中提到的eSNN/deSNN,Tempotron,Yu等方法都有各自的缺点，因为这些方法有共同的制约：输出是single spike</p>
 <p>所以它们：表达能力有限且时序信息利用的不充分</p>
@@ -1362,7 +4296,7 @@
 <p>multiple spikes 不仅表示“有没有发放”，还编码了“什么时候发、发了几次、间隔如何”，因此时间结构本身成为可用信息。</p>
 <p>这个也有生物证据支持——斑马鱼，精准spike timing控制动作→也就是说序列本身就是信息。</p>
 <p>所以我们需要找到一个让neuron发multiple spikes的学习方法。</p>
-<h3 id="1supervised-hebbian">（1）supervised hebbian<a class="headerlink" href="#1supervised-hebbian" title="Permanent link">&para;</a></h3>
+<h4 id="1supervised-hebbian">（1）supervised hebbian<a class="headerlink" href="#1supervised-hebbian" title="Permanent link">&para;</a></h4>
 <p>用监督版的Hebbian （类STDP）可以学时间模式，但是有缺陷</p>
 <p>但是有两个问题：</p>
 <ol>
@@ -1374,7 +4308,7 @@
 </li>
 </ol>
 <p>模型不稳定，容易破坏已学的知识</p>
-<h3 id="2statistical-methods">（2）statistical methods（统计方法）<a class="headerlink" href="#2statistical-methods" title="Permanent link">&para;</a></h3>
+<h4 id="2statistical-methods">（2）statistical methods（统计方法）<a class="headerlink" href="#2statistical-methods" title="Permanent link">&para;</a></h4>
 <p>用概率方法：<span class="arithmatex">\(maxP(在目标时间发spike)\)</span></p>
 <p>缺点：</p>
 <ol>
@@ -1385,7 +4319,7 @@
 <p>没有实际的应用</p>
 </li>
 </ol>
-<h3 id="3resume">（3）ReSuMe<a class="headerlink" href="#3resume" title="Permanent link">&para;</a></h3>
+<h4 id="3resume">（3）ReSuMe<a class="headerlink" href="#3resume" title="Permanent link">&para;</a></h4>
 <p>是一种监督学习算法，可以训练神经元产生“指定的多spike输出序列”</p>
 <p>目标：<span class="arithmatex">\(输入\text{spike pattern}→期望的输出\text{spike train}\)</span></p>
 <h4 id="_2">机制：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
@@ -1414,10 +4348,13 @@
 </li>
 <li>
 <p>本质上是一个Widrow-Hoff</p>
-<p><span class="arithmatex">\(w←w+η(target−output)\)</span></p>
-<p>只是换了spike形式</p>
 </li>
 </ol>
+<div class="arithmatex">\[
+w←w+η(target−output)
+\]</div>
+<div class="highlight"><pre><span></span><code>只是换了spike形式
+</code></pre></div>
 <h4 id="_3">解决问题：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
@@ -1436,7 +4373,9 @@
 <p>但是ReSuMe依旧是传统的神经网络的范式（调权重）</p>
 <h4 id="_4">任务形式：<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <p>文中写的是：</p>
-<p><span class="arithmatex">\(S(t)=[s_1(t),s_2(t),...s_N(t)]\)</span></p>
+<div class="arithmatex">\[
+S(t)=[s_1(t),s_2(t),...s_N(t)]
+\]</div>
 <p>这表示输入时N个输入突触上的spike train。</p>
 <h4 id="_5">各个符号：<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1457,7 +4396,9 @@
 </li>
 </ul>
 <h4 id="_6">它的核心学习公式<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(\frac{dω_i(t)}{dt} = [s_d(t)-s_o(t)][a+\int_{0}^{+∞​}T_W(s)s_i(t-s)ds]\)</span></p>
+<div class="arithmatex">\[
+\frac{dω_i(t)}{dt} = [s_d(t)-s_o(t)][a+\int_{0}^{+∞​}T_W(s)s_i(t-s)ds]
+\]</div>
 <ul>
 <li>
 <p>外层<span class="arithmatex">\(s_d(t)-s_o(t)\)</span>表示当前时刻t，到底应该鼓励增强，还是鼓励减权</p>
@@ -1604,7 +4545,7 @@ Ae^{-s/\tau}, &amp; s \ge 0 \\
 </tr>
 </tbody>
 </table>
-<h3 id="4span">（4）SPAN<a class="headerlink" href="#4span" title="Permanent link">&para;</a></h3>
+<h4 id="4span">（4）SPAN<a class="headerlink" href="#4span" title="Permanent link">&para;</a></h4>
 <p>因为ReSuMe有一个隐含的问题：spike train很难优化（不连续、不可微、很难用标准数学工具），所以SPAN的思路就是将其变成连续的</p>
 <p>这个和ReSuMe很相似，基本上就是在ReSuMe的基础上做的，区别在于：</p>
 <p>ReSuMe：直接在 spike 上做学习（事件驱动）
@@ -1635,7 +4576,9 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>这样就变成了<strong>函数拟合的问题</strong></p>
 <h4 id="step3widrow-hoff-rule">step3：用Widrow-Hoff(Δ rule)学习<a class="headerlink" href="#step3widrow-hoff-rule" title="Permanent link">&para;</a></h4>
 <p>类似于：</p>
-<p><span class="arithmatex">\(Δw_i​∝∫(y_d​(t)−y(t))x_i​(t)dt\)</span></p>
+<div class="arithmatex">\[
+Δw_i​∝∫(y_d​(t)−y(t))x_i​(t)dt
+\]</div>
 <p>也就是<strong>误差<span class="arithmatex">\(\times\)</span>输入信号</strong></p>
 <h4 id="step4spike">step4：再转会spike<a class="headerlink" href="#step4spike" title="Permanent link">&para;</a></h4>
 <h4 id="span">SPAN的优点：<a class="headerlink" href="#span" title="Permanent link">&para;</a></h4>
@@ -1667,16 +4610,22 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <ul>
 <li>step1：spike→连续信号</li>
 </ul>
-<p><span class="arithmatex">\(s_i​(t)→x_i​(t)\)</span></p>
-<ul>
-<li>step2：线性组合</li>
-</ul>
-<p><span class="arithmatex">\(y(t)=∑_iw_i​x_i​(t)\)</span></p>
-<ul>
-<li>step3：匹配目标信号</li>
-</ul>
-<p><span class="arithmatex">\(y(t)≈y_d(t)\)</span></p>
 </li>
+</ul>
+<div class="arithmatex">\[
+s_i​(t)→x_i​(t)
+\]</div>
+<div class="highlight"><pre><span></span><code>- step2：线性组合
+</code></pre></div>
+<div class="arithmatex">\[
+y(t)=∑_iw_i​x_i​(t)
+\]</div>
+<div class="highlight"><pre><span></span><code>- step3：匹配目标信号
+</code></pre></div>
+<div class="arithmatex">\[
+y(t)≈y_d(t)
+\]</div>
+<ul>
 <li>
 <p>右上角结果：就是显示随着epoches的增加输出逐渐对齐的过程</p>
 </li>
@@ -1684,7 +4633,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>右下角就是显示我们的error越来越小</p>
 </li>
 </ul>
-<h3 id="5chronotron-version1-e-learnig">（5）Chronotron version1 E-learnig<a class="headerlink" href="#5chronotron-version1-e-learnig" title="Permanent link">&para;</a></h3>
+<h4 id="5chronotron-version1-e-learnig">（5）Chronotron version1 E-learnig<a class="headerlink" href="#5chronotron-version1-e-learnig" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>ReSuMe：局部规则，不是严格优化</p>
@@ -1702,7 +4651,9 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>使用SRM+kernel function;</p>
 <p>因为每个输入的spike都会产生一个PSP：<span class="arithmatex">\(κ(t−t_i​)\)</span></p>
 <p>然后将所有的输出叠加：</p>
-<p><span class="arithmatex">\(u(t)=∑​_iw_i​∑_k​κ(t−t_i^k​)\)</span></p>
+<div class="arithmatex">\[
+u(t)=∑​_iw_i​∑_k​κ(t−t_i^k​)
+\]</div>
 <p>将spike变成连续信号，现在的神经元状态时连续函数<span class="arithmatex">\(u(t)\)</span></p>
 <h4 id="step-2-normalized-psp"><strong>step 2：定义 normalized PSP（λ）</strong><a class="headerlink" href="#step-2-normalized-psp" title="Permanent link">&para;</a></h4>
 <p><span class="arithmatex">\(λ_j​(t)\)</span>：这个时去掉权重之后的PSP（只有时序）</p>
@@ -1729,13 +4680,15 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </li>
 </ol>
 <p>权重更新是：</p>
-<p><span class="arithmatex">\(Δw_j​=−\frac{∂E​}{∂w_j}\)</span></p>
+<div class="arithmatex">\[
+Δw_j​=−\frac{∂E​}{∂w_j}
+\]</div>
 <p>本质上就是梯度下降。但是梯度时近似的但不是严格解析的</p>
 <p>Chronotron不是在做又没有spike，而是把spike从错误的时间移动到正确的时间上面</p>
 <p><strong>困难在哪</strong></p>
 <p>spike不是连续事件<span class="arithmatex">\(\text{spike = threshold crossing}\)</span></p>
 <p>dynamics很复杂：所种spike站之间相互影响、时间依赖强</p>
-<h3 id="6chronotron-i-learning">（6）Chronotron I-learning<a class="headerlink" href="#6chronotron-i-learning" title="Permanent link">&para;</a></h3>
+<h4 id="6chronotron-i-learning">（6）Chronotron I-learning<a class="headerlink" href="#6chronotron-i-learning" title="Permanent link">&para;</a></h4>
 <p>用ReSuMe的局部规则来近似实现Chronotron version 2</p>
 <ol>
 <li>
@@ -1765,7 +4718,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>这个方法适合<strong>单神经元级别的精确时序学习方法</strong></p>
 </li>
 </ol>
-<h3 id="7swat">（7）SWAT<a class="headerlink" href="#7swat" title="Permanent link">&para;</a></h3>
+<h4 id="7swat">（7）SWAT<a class="headerlink" href="#7swat" title="Permanent link">&para;</a></h4>
 <p>SWAT = STDP（时序） + BCM（发放率） → 用发放率来稳定 STDP 的学习，但只能处理 rate coding，不是真正的时间编码方法</p>
 <p>STDP（基本的<span class="arithmatex">\(\text{pre before post⇒w↑}\)</span>    <span class="arithmatex">\(\text{pre after post}⇒w↓\)</span>）</p>
 <p>BCM 权重更新取决于<strong>post-synaptic raie（方法率）</strong></p>
@@ -1773,12 +4726,14 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>即<span class="arithmatex">\(Δw∝\text{BCM factor}×\text{STDP update}\)</span></p>
 <p>BCM是用来稳定学习过程，从而防止SDTP本身容易发散、不稳定的问题</p>
 <p>基本流程：</p>
-<p><span class="arithmatex">\(\text{spike timing} →\)</span> <span class="arithmatex">\(\text{rate →filter}（是一个隐藏层，对输入的发放率做滤波/特征提取）\)</span></p>
+<div class="arithmatex">\[
+\text{spike timing} →$ $\text{rate →filter}（是一个隐藏层，对输入的发放率做滤波/特征提取）
+\]</div>
 <p>→<span class="arithmatex">\(分类\)</span></p>
 <p><strong>缺点：</strong></p>
 <p>缺点就来源于这个rate coding：</p>
 <p>因为SWAT不建模时间结构，只单纯保留spike per unit time。所以：SWAT 可以区分不同 firing rate（例如 100Hz vs 1000Hz），但无法区分具有相同或相近平均发放率、但时间结构不同的 spike patterns。</p>
-<h3 id="8dl-resumedelay-learning-resume">（8）DL-ReSuMe（Delay Learning ReSuMe）<a class="headerlink" href="#8dl-resumedelay-learning-resume" title="Permanent link">&para;</a></h3>
+<h4 id="8dl-resumedelay-learning-resume">（8）DL-ReSuMe（Delay Learning ReSuMe）<a class="headerlink" href="#8dl-resumedelay-learning-resume" title="Permanent link">&para;</a></h4>
 <p>DL-ReSuMe = ReSuMe（调权重） + 学习突触延迟（调时间），从而更好地对齐输出 spike 的时间</p>
 <h4 id="resume_2">动机：ReSuMe的问题<a class="headerlink" href="#resume_2" title="Permanent link">&para;</a></h4>
 <p>ReSuMe只能通过调整权重→间接影响spike的时间。</p>
@@ -1846,11 +4801,13 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </ul>
 </li>
 </ul>
-<h3 id="9lsm">（9）LSM<a class="headerlink" href="#9lsm" title="Permanent link">&para;</a></h3>
+<h4 id="9lsm">（9）LSM<a class="headerlink" href="#9lsm" title="Permanent link">&para;</a></h4>
 <p>这个和前面的内容有很大的区别→不训练网络本身，而是将它当成"动态特征提取器"</p>
 <p>LSM = 一个固定的递归 SNN（reservoir） + 一个可训练的读出层，用来把时间序列映射成分类结果</p>
 <h4 id="lsm">LSM的整体结构<a class="headerlink" href="#lsm" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(\text{Input spikes→Reservoir (LSM)→Readout}\)</span></p>
+<div class="arithmatex">\[
+\text{Input spikes→Reservoir (LSM)→Readout}
+\]</div>
 <ul>
 <li>
 <p>Reservoir：一个随机连接的递归SNN</p>
@@ -1882,7 +4839,9 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>reservoir 会产生：</p>
 </li>
 </ul>
-<p><span class="arithmatex">\(x(t)=f(当前输入 + 过去输入)\)</span></p>
+<div class="arithmatex">\[
+x(t)=f(当前输入 + 过去输入)
+\]</div>
 <ul>
 <li><strong>输出：</strong>class label</li>
 </ul>
@@ -1919,7 +4878,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </ul>
 <h4 id="_15">相关改进：<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
 <p>因为LSM是一个框架，不是一个固定的模型，所以都是可以改变的 </p>
-<h3 id="10polychronous-groupslsm">（10）polychronous groups+LSM<a class="headerlink" href="#10polychronous-groupslsm" title="Permanent link">&para;</a></h3>
+<h4 id="10polychronous-groupslsm">（10）polychronous groups+LSM<a class="headerlink" href="#10polychronous-groupslsm" title="Permanent link">&para;</a></h4>
 <p><strong>什么是polychronous group?</strong></p>
 <ul>
 <li>不同时间发放，但是有固定的时间关系（就是相当于虽然开始的时间不确定，但是每个之间中间的间隔是确定的）→本质上就是一个时间结构pattern</li>
@@ -1941,7 +4900,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>性能不如传统方法</p>
 </li>
 </ul>
-<h3 id="_16">整体问题：<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h4 id="_16">整体问题：<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
 <p>虽然学习了multiple spikes，但是这种方法只能在“单层神经元or单层”上工作，很难扩展到复杂网络</p>
 <ul>
 <li>
@@ -1954,8 +4913,8 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>credit assignment problem：即哪个neuron该为某个spike负责，在multi-kayer+multi-spike上是完全混乱的</p>
 </li>
 </ul>
-<h2 id="23-learning-multiple-spikes-in-a-multilayer-spiking-neural-network">2.3 Learning multiple spikes in a multilayer spiking neural network<a class="headerlink" href="#23-learning-multiple-spikes-in-a-multilayer-spiking-neural-network" title="Permanent link">&para;</a></h2>
-<h3 id="1_2">1. 多层结构于多脉冲编码的必要性<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<h3 id="23-learning-multiple-spikes-in-a-multilayer-spiking-neural-network">2.3 Learning multiple spikes in a multilayer spiking neural network<a class="headerlink" href="#23-learning-multiple-spikes-in-a-multilayer-spiking-neural-network" title="Permanent link">&para;</a></h3>
+<h2 id="1_2">1. 多层结构于多脉冲编码的必要性<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h2>
 <p>这个就是经典神经网络理论所提出的，单层perceptron只能做线性可分/多层的则可以做非线性的</p>
 <p>这条结论在SNN里面也适用。由Sporea et al.证明multilayer SNN 可以实现 XOR，而单层的不行。</p>
 <p>前面2.1和2.2的内容本质上是不足够的，因为无法实现复杂的非线性任务</p>
@@ -2032,7 +4991,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </tr>
 </tbody>
 </table>
-<h3 id="2_2">2. 现有研究的演进和局限性<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<h2 id="2_2">2. 现有研究的演进和局限性<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h2>
 <h4 id="1stdp-multilayer">（1）STDP multilayer<a class="headerlink" href="#1stdp-multilayer" title="Permanent link">&para;</a></h4>
 <p><strong>a. Bichler et al., 2012</strong></p>
 <p>这个学习信号的方法只是找到“谁和谁经常一起出现”，完全没有用到label/error.task objective等</p>
@@ -2163,7 +5122,9 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <ol>
 <li><strong>error function</strong></li>
 </ol>
-<p><span class="arithmatex">\(E = 0.5 * Σ_j Σ_f (t_P{actual}(j,f) - t_{target}(j,f))²\)</span></p>
+<div class="arithmatex">\[
+E = 0.5 * Σ_j Σ_f (t_P{actual}(j,f) - t_{target}(j,f))²
+\]</div>
 <p>每个spike对齐→算时间差→求和</p>
 <ol>
 <li><strong>一个关键的假设</strong></li>
@@ -2198,24 +5159,20 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>右边是多子链接</p>
 <p>两个神经元之间不是一条边，而是多条。</p>
 <p>每个连接都有一个权重，一个delay</p>
-<p><span class="arithmatex">\(u_j​(t)=∑_i​∑_k​w_{ij}^{(k)}​ε(t−t_i​−d_{ij}^{(k)}​)\)</span></p>
-<ul>
-<li>
-<p>直观的理解：</p>
-<ul>
-<li>
-<p>对于一个输入spike，通过不同的delay变成<span class="arithmatex">\(t_i+d_1\)</span>、<span class="arithmatex">\(t_i+d_2\)</span>、....</p>
 </li>
-<li>
-<p>就是将一个spike展开成为多个时间版本</p>
-</li>
-<li>
-<p>这个是为了：构造一个关于t的函数，用一组base function来逼近目标函数</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+</ol>
+<div class="arithmatex">\[
+u_j​(t)=∑_i​∑_k​w_{ij}^{(k)}​ε(t−t_i​−d_{ij}^{(k)}​)
+\]</div>
+<div class="highlight"><pre><span></span><code>- 直观的理解：
+
+    - 对于一个输入spike，通过不同的delay变成$t_i+d_1$、$t_i+d_2$、....
+
+    - 就是将一个spike展开成为多个时间版本
+
+    - 这个是为了：构造一个关于t的函数，用一组base function来逼近目标函数
+</code></pre></div>
+<ol>
 <li>
 <p>核心机制</p>
 <p>输入：多个spike delay之后的结果</p>
@@ -2265,7 +5222,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </li>
 </ol>
 <p>比较了这么多的gradient方法之后，作者得出结论：基于局部规则的 STDP 可能更适合用于多层 SNN 的学习</p>
-<h3 id="3-stdp">3. 转向STDP的局部学习<a class="headerlink" href="#3-stdp" title="Permanent link">&para;</a></h3>
+<h2 id="3-stdp">3. 转向STDP的局部学习<a class="headerlink" href="#3-stdp" title="Permanent link">&para;</a></h2>
 <p>根据上面的分析，我们想要知道有没有不用gradient，而使用STDP做多层监督学习的方法</p>
 <p>总体思想是使用STDP和anti-STDP做一个类似监督学习的规则，应用于多层SNN (input/hidden/output都可以发multiple spikes)</p>
 <h4 id="1stdp">（1）常规STDP的问题和改进方法<a class="headerlink" href="#1stdp" title="Permanent link">&para;</a></h4>
@@ -2355,7 +5312,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </ul>
 </li>
 </ul>
-<h3 id="4">4. 总结于分类<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<h2 id="4">4. 总结于分类<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <p><img alt="image.png" src="../SNNoverall-assets/image-4.png" /></p>
 <p>大多数方法都几种在单个spike或单神经元/单层，因为这种方法比较简单</p>
 <h4 id="rate-coding-vs-temporal-coding">rate coding vs. temporal coding<a class="headerlink" href="#rate-coding-vs-temporal-coding" title="Permanent link">&para;</a></h4>
@@ -2411,9 +5368,9 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </ul>
 </li>
 </ul>
-<h2 id="24-learning-algorithms-with-delay-leaning-ability">2.4 Learning algorithms with delay leaning ability<a class="headerlink" href="#24-learning-algorithms-with-delay-leaning-ability" title="Permanent link">&para;</a></h2>
+<h3 id="24-learning-algorithms-with-delay-leaning-ability">2.4 Learning algorithms with delay leaning ability<a class="headerlink" href="#24-learning-algorithms-with-delay-leaning-ability" title="Permanent link">&para;</a></h3>
 <p>有两种学习delay的方法</p>
-<h3 id="1delay-selection">（1）Delay Selection（延迟选择）<a class="headerlink" href="#1delay-selection" title="Permanent link">&para;</a></h3>
+<h4 id="1delay-selection">（1）Delay Selection（延迟选择）<a class="headerlink" href="#1delay-selection" title="Permanent link">&para;</a></h4>
 <p><strong>核心思想</strong>：不去学习delay，而是预先给很多delay，让模型自己选</p>
 <p><strong>具体做法</strong>：</p>
 <ul>
@@ -2433,12 +5390,13 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>这样多个delay可以叠加出复杂的temporal pattern：</p>
 </li>
 </ul>
-<p><span class="arithmatex">\(u(t)=\sum\limits_a \omega_i \cdot \epsilon (t - t_i - d_i)\)</span></p>
-<ul>
-<li>不同的<span class="arithmatex">\(d_i\)</span>会让PSP在不同时间叠加→形成多个峰值→多个spike</li>
-</ul>
 </li>
 </ul>
+<div class="arithmatex">\[
+u(t)=\sum\limits_a \omega_i \cdot \epsilon (t - t_i - d_i)
+\]</div>
+<div class="highlight"><pre><span></span><code>- 不同的$d_i$会让PSP在不同时间叠加→形成多个峰值→多个spike
+</code></pre></div>
 <p><strong>缺点：</strong></p>
 <ul>
 <li>
@@ -2448,12 +5406,12 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>计算成本↑</p>
 </li>
 </ul>
-<h3 id="2delay-shift">（2）delay shift（延迟移动）<a class="headerlink" href="#2delay-shift" title="Permanent link">&para;</a></h3>
+<h4 id="2delay-shift">（2）delay shift（延迟移动）<a class="headerlink" href="#2delay-shift" title="Permanent link">&para;</a></h4>
 <p><strong>核心思想</strong>：直接把delay当作可学习的参数</p>
 <p><strong>经典模型</strong>：CD（Coincidence Detector），作用是只有多个spike时间对齐才触发</p>
 <p>即调整delay，争取做到<span class="arithmatex">\(t_i​+d_i​≈t_j​+d_j​\)</span></p>
 <p>DL-ReSuMe、EDL、Taherkhani 2018 multilayer SNN。这些都是dalay shift思路的扩展版本</p>
-<h2 id="25-deep-spiking-neural-networks">2.5 Deep Spiking Neural Networks（深度脉冲神经网络）<a class="headerlink" href="#25-deep-spiking-neural-networks" title="Permanent link">&para;</a></h2>
+<h3 id="25-deep-spiking-neural-networks">2.5 Deep Spiking Neural Networks（深度脉冲神经网络）<a class="headerlink" href="#25-deep-spiking-neural-networks" title="Permanent link">&para;</a></h3>
 <p>这一整段就在说：SNN是如何走向“深度学习的”</p>
 <p>将深度学习的方法论迁移到SNN上，但发现困难很大→于是形成了几条不同的及技术路线</p>
 <p><strong>DNN：</strong></p>
@@ -2492,7 +5450,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </ul>
 <p>这个就是一个做好深度模型的经典答案。标准就是这样的</p>
 <p>SNN做的好，也要尽量学习这样的结构</p>
-<h3 id="251-backpropagationbp">2.5.1 Backpropagation（直接做BP）<a class="headerlink" href="#251-backpropagationbp" title="Permanent link">&para;</a></h3>
+<h4 id="251-backpropagationbp">2.5.1 Backpropagation（直接做BP）<a class="headerlink" href="#251-backpropagationbp" title="Permanent link">&para;</a></h4>
 <h4 id="0backpropagation">（0）普通神经网络里面的backpropagation是怎么做的<a class="headerlink" href="#0backpropagation" title="Permanent link">&para;</a></h4>
 <p>标准bp做的事：</p>
 <ol>
@@ -2507,10 +5465,14 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </li>
 </ol>
 <p>公式本质：</p>
-<p><span class="arithmatex">\(\frac{∂L}{∂w}​=\frac{∂L}{∂output}​\frac{∂output}{∂w}\)</span></p>
+<div class="arithmatex">\[
+\frac{∂L}{∂w}​=\frac{∂L}{∂output}​\frac{∂output}{∂w}
+\]</div>
 <p>关键在于：这里所有东西是可导的（即连续的）</p>
 <h4 id="1snn-bp">（1）SNN 不能直接BP<a class="headerlink" href="#1snn-bp" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(spike = H(u(t)-θ)\)</span></p>
+<div class="arithmatex">\[
+spike = H(u(t)-θ)
+\]</div>
 <p>其中<em>H</em>是跃阶函数（0/1）</p>
 <ul>
 <li>
@@ -2560,48 +5522,38 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </li>
 <li>
 <p>引入<strong>eligibility trace</strong>，将时间因素缓存下来：</p>
-<p><span class="arithmatex">\(e_{ij}(t) = \sum\limits_{t^′&lt;t}pre_i(t^′)\cdot kernel (t-t^′)\)</span> </p>
-<ul>
-<li>BP需要归因，当前spike可能时过去输入造成，将历史出入累积成：<span class="arithmatex">\(e_{ij}\)</span></li>
-</ul>
-</li>
-<li>
-<p>最终：<span class="arithmatex">\(Δw∼error×e_{ij}\)</span></p>
-<ul>
-<li>
-<p>error是更新的方向</p>
-</li>
-<li>
-<p><span class="arithmatex">\(e_{ij}\)</span>是谁该负责</p>
-</li>
-<li>
-<p>综合理解成：只有当神经元快要发spike的时候，输入才有资格被学习</p>
-</li>
-</ul>
 </li>
 </ol>
-<p><strong>优点：</strong></p>
-<ul>
-<li>
-<p>可以训练多层SNN</p>
 </li>
-<li>
-<p>类似深度学习</p>
-</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li>
-<p>不稳定</p>
-</li>
-<li>
-<p>大规模效果差</p>
-</li>
-<li>
-<p>不太现实，生物学上证据有限</p>
-</li>
-</ul>
-</li>
+</ol>
+<div class="arithmatex">\[
+e_{ij}(t) = \sum\limits_{t^′&lt;t}pre_i(t^′)\cdot kernel (t-t^′)
+\]</div>
+<div class="highlight"><pre><span></span><code>    - BP需要归因，当前spike可能时过去输入造成，将历史出入累积成：$e_{ij}$
+
+1. 最终：$Δw∼error×e_{ij}$
+
+    - error是更新的方向
+
+    - $e_{ij}$是谁该负责
+
+    - 综合理解成：只有当神经元快要发spike的时候，输入才有资格被学习
+
+**优点：**
+
+- 可以训练多层SNN
+
+- 类似深度学习
+
+**缺点：**
+
+- 不稳定
+
+- 大规模效果差
+
+- 不太现实，生物学上证据有限
+</code></pre></div>
+<ol>
 <li>
 <p><strong>方法2：Mostafa 2018（基于“spike time”的BP）</strong></p>
 <p>不优化电压，而是直接优化“spike time”</p>
@@ -2634,41 +5586,36 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </li>
 <li>
 <p>​<span class="arithmatex">\(\frac{∂t_{out}}{∂w}\)</span>：</p>
-<p><span class="arithmatex">\(V(t_{out}​)=V_{th}​\)</span></p>
-<p>对w求导：</p>
-<p><span class="arithmatex">\(\frac{dV​}{dw}+\frac{dV}{dt}​⋅\frac{d_{t_{out}}}{dw}​​=0\)</span></p>
-<p><span class="arithmatex">\(\frac{d{t_{out}}}{dw}​=−\frac{∂V/∂w}{∂V/∂t}\)</span></p>
-</li>
-</ul>
-</li>
-<li>
-<p>只有<span class="arithmatex">\(t_i&lt;t_{out}\)</span>的参与梯度：这个是因为未来的spike还没有发生，我们要考虑因果性</p>
-</li>
-<li>
-<p>更新规则本质：<span class="arithmatex">\(Δw∝(t_{out}​−t_{target}​)⋅PSP(t_{out}​−t_i​)\)</span></p>
-<ul>
-<li>
-<p><span class="arithmatex">\(t_{out}​−t_{target}\)</span>：error term </p>
-<ul>
-<li>
-<blockquote>
-<p>0→spike 太晚→要提前</p>
-</blockquote>
-</li>
-<li>
-<p>&lt;0→spike 太早→要延后</p>
-</li>
-</ul>
-</li>
-<li>
-<p><span class="arithmatex">\(PSP(t_{out}-t_i)\)</span>：输入对当前spike的贡献</p>
 </li>
 </ul>
 </li>
 </ol>
 </li>
 </ol>
-<h3 id="252-spiking-cnn">2.5.2 Spiking CNN（卷积结构）<a class="headerlink" href="#252-spiking-cnn" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+V(t_{out}​)=V_{th}​
+\]</div>
+<div class="highlight"><pre><span></span><code>        对w求导：
+</code></pre></div>
+<div class="arithmatex">\[
+\frac{dV​}{dw}+\frac{dV}{dt}​⋅\frac{d_{t_{out}}}{dw}​​=0
+\]</div>
+<div class="arithmatex">\[
+\frac{d{t_{out}}}{dw}​=−\frac{∂V/∂w}{∂V/∂t}
+\]</div>
+<div class="highlight"><pre><span></span><code>1. 只有$t_i&lt;t_{out}$的参与梯度：这个是因为未来的spike还没有发生，我们要考虑因果性
+
+2. 更新规则本质：$Δw∝(t_{out}​−t_{target}​)⋅PSP(t_{out}​−t_i​)$
+
+    - $t_{out}​−t_{target}$：error term
+
+        - &gt;0→spike 太晚→要提前
+
+        - &lt;0→spike 太早→要延后
+
+    - $PSP(t_{out}-t_i)$：输入对当前spike的贡献
+</code></pre></div>
+<h4 id="252-spiking-cnn">2.5.2 Spiking CNN（卷积结构）<a class="headerlink" href="#252-spiking-cnn" title="Permanent link">&para;</a></h4>
 <p>这个就是用“脉冲神经元”低缓普通神经元的CNN</p>
 <p>也就说把传统的CNN的连续计算值换成spike（发不发脉冲+发射时间）</p>
 <p>CNN的传统结构是<span class="arithmatex">\(输入→卷积→激活值（连续）→分类\)</span></p>
@@ -2705,7 +5652,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>最后将这些SNN分类变成支持向量机的分类方式</p>
 </li>
 </ol>
-<h3 id="253-semi-supervised">2.5.3 Semi-supervised（半监督/预训练）<a class="headerlink" href="#253-semi-supervised" title="Permanent link">&para;</a></h3>
+<h4 id="253-semi-supervised">2.5.3 Semi-supervised（半监督/预训练）<a class="headerlink" href="#253-semi-supervised" title="Permanent link">&para;</a></h4>
 <p>用无监督预训练——少料监督微调来训练SNN/SCNN</p>
 <p>也就是先学特征→再学“分类“</p>
 <h4 id="1auto-encoderpanda-2016">方法1：Auto-Encoder(Panda 2016)<a class="headerlink" href="#1auto-encoderpanda-2016" title="Permanent link">&para;</a></h4>
@@ -2828,7 +5775,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>表达能力不够</p>
 </li>
 </ul>
-<h3 id="254-dnndsnn">2.5.4 DNN→DSNN 转换<a class="headerlink" href="#254-dnndsnn" title="Permanent link">&para;</a></h3>
+<h4 id="254-dnndsnn">2.5.4 DNN→DSNN 转换<a class="headerlink" href="#254-dnndsnn" title="Permanent link">&para;</a></h4>
 <h4 id="dnndeep-neural-network">DNN（deep neural network）<a class="headerlink" href="#dnndeep-neural-network" title="Permanent link">&para;</a></h4>
 <p>就是经典的<span class="arithmatex">\(y = f(Wx+b)\)</span></p>
 <h4 id="dsnndeep-spiking-neural-network">DSNN（deep spiking neural network）<a class="headerlink" href="#dsnndeep-spiking-neural-network" title="Permanent link">&para;</a></h4>
@@ -2870,7 +5817,7 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </ol>
 <p>需要很多的time steps</p>
 <p>同样，因为各种近似，所以精度不高</p>
-<h3 id="255-recurrent-snn">2.5.5 Recurrent SNN（时序模型）<a class="headerlink" href="#255-recurrent-snn" title="Permanent link">&para;</a></h3>
+<h4 id="255-recurrent-snn">2.5.5 Recurrent SNN（时序模型）<a class="headerlink" href="#255-recurrent-snn" title="Permanent link">&para;</a></h4>
 <p>带时间循环结构的SNN</p>
 <p>普通RNN：<span class="arithmatex">\(h_t=f(Wx_t+Uh_{t-1})\)</span>也就是当前状态=当前输入+过去记忆</p>
 <p>在SNN中变成：</p>
@@ -2922,7 +5869,9 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 <p>用局部变量记录历史：</p>
 </li>
 </ul>
-<p><span class="arithmatex">\(e_{ij}​(t)\)</span></p>
+<div class="arithmatex">\[
+e_{ij}​(t)
+\]</div>
 <ul>
 <li>
 <p>叫：</p>
@@ -2930,10 +5879,12 @@ SPAN：先把 spike train 变成连续信号，再用“普通数学方法”去
 </li>
 </ul>
 <p>（2）更新方式</p>
-<p><span class="arithmatex">\(ΔW∝error×e_{ij}​(t)\)</span></p>
+<div class="arithmatex">\[
+ΔW∝error×e_{ij}​(t)
+\]</div>
 <p>（3）直观解释</p>
 <p>类似于局部的STDP和全局的error signal</p>
-<h1 id="3-snn">3. 对单脉冲和多脉冲的SNN最新算法的评价<a class="headerlink" href="#3-snn" title="Permanent link">&para;</a></h1>
+<h2 id="3-snn">3. 对单脉冲和多脉冲的SNN最新算法的评价<a class="headerlink" href="#3-snn" title="Permanent link">&para;</a></h2>
 
 
 
